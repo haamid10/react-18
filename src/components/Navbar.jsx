@@ -16,7 +16,19 @@ const Navbar = () => {
         window.scrollTo(0,0);
         }}>
           <img src={logo} alt="logo" className='w-8 h-8 object-contain'/>
+          <p className=' text-white text-[19px] font-bold cursor-pointer'>Abdi hameed <span className='sm:block hidden'>
+            |   Haamid10</span></p>
         </Link>
+
+        <ul className=' list-none hidden sm:flex flex-row gap-10 '>
+          {navLinks.map((links)=>(
+            <li
+              key={`${links.id}`}
+              className={ `${active === links.title ? "text-white": "text-secondary"} hover:text-white text-[18px] font-medium cursor-pointer`}>
+              <a href={ `${links.id}`}>{links.title}</a>
+            </li>
+          ))}
+        </ul>
 
       </div>
 
