@@ -17,7 +17,7 @@ const Navbar = () => {
         window.scrollTo(0,0);
         }}>
           <img src={logo} alt="logo" className='w-8 h-8 object-contain'/>
-          <p className=' text-white text-[19px] font-bold cursor-pointer flex'>Abdi hameed &nbsp; <span className='sm:block hidden'>
+          <p className=' text-white text-[19px] font-bold cursor-pointer flex'>A.haamid &nbsp; <span className='sm:block hidden'>
             |   Haamid10</span></p>
         </Link>
 
